@@ -1,0 +1,43 @@
+@media (min-width: 1440px) {
+}
+
+@media (max-width: 1439px) {
+}
+
+@media (max-width: 1023px) {
+  .header {
+    justify-content: center;
+    padding: 20px 16px 20px 16px;
+    align-items: center;
+  }
+
+  .header__contacts {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    background: #0E1014;
+  }
+
+  .header__logo {
+    display: none;
+  }
+
+  .header__links .item{
+    font-size: 12px;
+  }
+  
+  .header__links .item:last-child {
+    display: none;
+  }
+  
+  .footer-cont__street {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+@media (max-width: 320px) {
+}

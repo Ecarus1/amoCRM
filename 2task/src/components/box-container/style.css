@@ -1,0 +1,114 @@
+.container {
+  max-width: 100vw;
+  min-height: 100vh;
+  background: #0E1014;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container__box {
+  flex-basis: 1140px;
+  position: relative;
+  margin: 0 30px;
+}
+
+.container__content {
+  position: relative;
+  z-index: 100;
+}
+
+.container__light {
+  position: absolute;
+  opacity: 0.5;
+  filter: blur(196px);
+}
+
+.container__yellow {
+  display: none;
+  width: 200px;
+  height: 200px;
+
+  background: #FCB045;
+  opacity: 0.4;
+  filter: blur(196px);
+}
+
+.container__nois, .container__glass {
+  display: none;
+  position: absolute;
+}
+
+.container__red {
+  width: 311px;
+  height: 311px;
+  left: -102px;
+  top: 251px;
+  animation: 15s infinite slidein;
+  
+  background: #961A1A;
+}
+
+@keyframes slidein {
+  from {
+    width: 311px;
+    height: 311px;
+  }
+  30% {
+    width: 211px;
+    height: 211px;
+  }
+  to {
+    width: 311px;
+    height: 311px;
+  }
+}
+
+.container__purple {
+  width: 259px;
+  height: 259px;
+  right: 429px;
+  top: -154px;
+  animation: 10s infinite slidein;
+  
+  background: #833AB4;
+}
+
+.container__ball {
+  position: absolute;
+  backdrop-filter: blur(2px);
+  border-radius: 50%;
+}
+
+.red__big {
+  width: 83px;
+  height: 83px;
+  left: 369px;
+  top: 83px;
+  
+  background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.536) 0%, rgba(212, 93, 93, 0.264) 59.67%, rgba(167, 49, 49, 0.248) 78.59%, rgba(130, 25, 25, 0.248) 100%);
+  box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+}
+
+.red__small {
+  width: 28px;
+  height: 28px;
+  left: 701px;
+  top: 547px;
+  
+  background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.48) 0%, rgba(212, 93, 93, 0.248) 59.67%, rgba(167, 49, 49, 0.264) 78.59%, rgba(130, 25, 25, 0.232) 100%);
+  box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+  filter: blur(2.5px);
+}
+
+.purple__big {
+  width: 60px;
+  height: 60px;
+  left: 718px;
+  top: -2px;
+  
+  background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(236, 208, 255, 0.64) 0%, rgba(161, 93, 207, 0.24) 59.67%, rgba(118, 49, 164, 0.208) 78.59%, rgba(86, 24, 128, 0.232) 100%);
+  box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
+  filter: blur(5px);
+}

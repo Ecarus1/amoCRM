@@ -1,0 +1,107 @@
+.info-company {
+  margin: 15px 0 0 0;
+}
+
+.info-company__title, .company-grid__title {
+  font-family: 'Inter';
+  font-style: normal;
+}
+
+.info-company__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+  max-width: 291px;
+  margin-left: auto;
+  
+  color: #E4E5EA;
+}
+
+.company-grid__item:nth-child(1) > .company-grid__title::after {
+  content: "ВИДЖЕТЫ";
+}
+
+.company-grid__item:nth-child(2) > .company-grid__title::after {
+  content: "DASHBOARD";
+}
+
+.company-grid__item:nth-child(3) > .company-grid__title::after {
+  content: "Skype Аудит";
+}
+
+.company-grid__item:nth-child(4) > .company-grid__title::after {
+  content: "35 дней";
+}
+
+.info-company__grad {
+  background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+}
+
+
+.company-grid__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 22px;
+  grid-row-gap: 30px;
+
+  margin: 40px 0 0 0;
+}
+
+.company-grid__item {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.company-grid__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  
+  color: #E4E5EA;
+}
+
+.company-grid__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+  margin: 6px 0 0 0;
+
+  color: #E4E5EA;
+}
+
+.company-grid__item:nth-child(1) .company-grid__text{
+  max-width: 89px;
+}
+
+.company-grid__item:nth-child(2) .company-grid__text{
+  max-width: 135px;
+}
+
+.company-grid__item:nth-child(3) .company-grid__text{
+  max-width: 134px;
+}
+
+.company-grid__item:nth-child(4) .company-grid__text{
+  max-width: 130px;
+}
+
+.info-company__btn {
+  display: flex;
+  justify-content: flex-end;
+  margin: 61px 0 0 0;
+}

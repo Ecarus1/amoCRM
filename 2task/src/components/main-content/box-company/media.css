@@ -1,0 +1,21 @@
+@media (min-width: 1440px) {
+}
+
+@media (max-width: 1439px) {
+}
+
+@media (max-width: 1023px) {
+}
+
+@media (max-width: 767px) {
+  .box-company__title, .box-company__name {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .box-company {
+    flex-basis: 240px;
+  }
+}
+
+@media (max-width: 320px) {
+}

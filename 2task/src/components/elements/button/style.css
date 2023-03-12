@@ -1,0 +1,39 @@
+.button {
+  width: 262px;
+  height: 61px;
+
+  background: #4077F3;
+  border: 0;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #E4E5EA;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -262px;
+  width: 262px;
+  height: 61px;
+  background: #8baeff;
+  opacity: 0.3;
+  transition: left .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.button:hover:before {
+  left: 0;
+}
+
+.button:active {
+  background: #2964ee;
+}

@@ -1,0 +1,92 @@
+@media (min-width: 1440px) {
+}
+
+@media (max-width: 1439px) {
+}
+
+@media (max-width: 1023px) {
+}
+
+@media (max-width: 767px) {
+  .container__box {
+    margin: 0;
+  }
+
+  .container__red {
+    width: 211px;
+    height: 210px;
+    left: -55px;
+    top: 318px;
+  }
+
+  .container__purple {
+    width: 259px;
+    height: 259px;
+    right: -197px;
+    top: 180px;
+    
+    background: #833AB4;
+  }
+
+  .container__yellow {
+    display: block;
+    top: 607px;
+    left: -66px;
+  }
+
+  .red__big {
+    left: 64px;
+  }
+
+  .red__small {
+    left: 438px;
+  }
+
+  .purple__big {
+    left: 662px;
+    top: 255px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container__nois {
+    left: 0px;
+    top: 0px;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    background-image: url("../../assets/nois.png");
+    mix-blend-mode: overlay;
+    opacity: 0.2;
+  }
+
+  .container__glass {
+    display: block;
+    width: 320px;
+    height: 550px;
+    left: 0px;
+    top: 0px;
+    
+    background: radial-gradient(238.53% 189.02% at 3.2% 3.49%, rgba(255, 246, 233, 0.1) 0%, rgba(26, 29, 35, 0.1) 26.62%, rgba(26, 29, 35, 0.1) 52.1%, rgba(26, 29, 35, 0.01) 70.17%, rgba(26, 29, 35, 0) 100%);
+    backdrop-filter: blur(7.5px);
+  }
+
+  .red__big {
+    width: 43px;
+    height: 43px;
+    left: 29px;
+    top: 487px;
+    
+    backdrop-filter: blur(2px);
+  }
+
+  .purple__big {
+    width: 40px;
+    height: 40px;
+    top: 313px;
+    left: 275px;
+    
+    backdrop-filter: blur(2px);
+  }
+}

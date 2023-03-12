@@ -1,0 +1,30 @@
+.item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.item__link {
+  text-decoration: none;
+  color: #E4E5EA;
+  position: relative;
+}
+
+.item__link::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0px;
+  height: 1px;
+  background: #E4E5EA;
+  transition: width .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.item__link:hover:before {
+  width: 100%;
+}
+
+.item__margin:not(:last-child) {
+  margin: 0 0 10px 0;
+}

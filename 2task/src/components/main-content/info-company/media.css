@@ -1,0 +1,104 @@
+@media (min-width: 1440px) {
+}
+
+@media (max-width: 1439px) {
+}
+
+@media (max-width: 1023px) {
+}
+
+@media (max-width: 767px) {
+  .info-company{
+    width: 100%;
+  }
+  .info-company__title {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 14px;
+  }
+  .company-grid__text {
+    text-align: center;
+    font-size: 14px;
+  }
+  .company-grid__item {
+    align-items: center;
+  }
+  .info-company__btn {
+    justify-content: center;
+    margin: 14px 0 0 0;
+  }
+  .company-grid__grid {
+    margin: 14px 0 0 0;
+  }
+  .company-grid__title {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  /* .info-company {
+    display: none;
+  } */
+  .company-grid__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+
+  .company-grid__title::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 10px;
+    margin: 0 5px 0 0;
+    visibility: visible;
+
+    background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);    
+  }
+
+
+  .info-company__btn, .company-grid__text {
+    display: none;
+  }
+
+  .company-grid__item {
+    align-items: flex-start;
+  }
+
+  .company-grid__grid {
+    grid-row-gap: 14px;
+    grid-column-gap: 5px
+  }
+  .info-company__title {
+    text-align: left;
+  }
+
+  .company-grid__item:nth-child(1) > .company-grid__title::after {
+    content: "Skype аудит";
+  }
+  
+  .company-grid__item:nth-child(2) > .company-grid__title::after {
+    content: "30 виджетов";
+  }
+  
+  .company-grid__item:nth-child(3) > .company-grid__title::after {
+    content: "Dashboard";
+  }
+  
+  .company-grid__item:nth-child(4) > .company-grid__title::after {
+    content: "Месяц аmoCRM";
+  }
+  .company-grid__grid {
+    width: 264px;
+  }
+}

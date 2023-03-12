@@ -1,0 +1,78 @@
+.header {
+  display: flex;
+  font-family: 'Inter';
+  font-style: normal;
+  align-items: center;
+  padding: 57px 0 0 0;
+}
+
+.logo {
+  width: 100%;
+}
+
+.header__logo {
+  width: 140px;
+  position: relative;
+  margin: 0 52px 0 0;
+}
+
+.header__text {
+  position: absolute;
+  width: 140px;
+  margin: 10px 0 0 0;
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+
+  color: #E4E5EA;
+}
+
+.header__links {
+  flex-basis: 503px;
+  margin: 0 10px 0 0;
+}
+
+.header__contacts {
+  display: flex;
+  flex-basis: 314px;
+  justify-content: space-between;
+  margin-left: auto;
+  align-items: center;
+}
+
+.header__tel {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+  text-decoration: none;
+  color: #E4E5EA;
+  position: relative;
+}
+
+.header__tel::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0px;
+  height: 1px;
+  background: #E4E5EA;
+  transition: width .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.header__tel:hover:before {
+  width: 100%
+}
+
+.header__сhannels {
+  flex-basis: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__сhannels a {
+  display: flex;
+  align-items: center;
+}
